@@ -11,9 +11,9 @@ for(let i = 0; i < 16; i++){
         const grid_section = document.createElement("div");
         grid_section.classList.add("square");
         grid_row.appendChild(grid_section);
-        
+        grid_section.addEventListener("mouseover", function(){
+            grid_section.classList.add("hovered");
+        });
         
     }
 }
-
-
