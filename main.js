@@ -4,6 +4,13 @@ const grid_input = document.querySelector("#grid_width");
 
 draw_grid();
 function draw_grid(width=16){
+    if(width < 1){
+        width =1;
+        grid_input.value = 1;
+    }else if(width > 100){
+        width=100;
+        grid_input.value = 100;
+    }
     grid_container.innerHTML = '';
     for(let i = 0; i < width; i++){
         const grid_row = document.createElement("div");
