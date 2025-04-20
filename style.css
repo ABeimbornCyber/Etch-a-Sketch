@@ -50,3 +50,21 @@ body {
  .hovered {
     background-color: green;
  }
+ #grid_width {
+    width: 200px;
+    height: 20px;
+ }
+ .menu_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 12px;
+    gap: 8px;
+    align-items: center;
+    
+ }
+#grid_width_tag {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+    font-size: 15px;
+}
