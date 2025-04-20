@@ -1,3 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.container {
+    display: flex;
+    flex-direction: row;
+}
 
-
+.square {
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
