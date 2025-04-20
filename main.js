@@ -4,6 +4,7 @@ const grid_input = document.querySelector("#grid_width");
 const crazyMode = document.querySelector("#crazyMode");
 const grid_width_px = 600;
 let crazy = false;
+const reset = document.querySelector("#reset");
 draw_grid();
 function draw_grid(width=16){
     if(width < 1){
@@ -55,6 +56,9 @@ crazyMode.addEventListener('click', function(){
         crazy = false;
     }
     
+});
+reset.addEventListener('click', function(){
+    draw_grid(grid_width);
 });
 
 grid_input.addEventListener('input', function(e){
