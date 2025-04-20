@@ -1,16 +1,44 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
+    background-color: rgb(109, 85, 55);
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .square {
     display: flex;
     width: 16px;
     height: 16px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
 }
+ #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: darkslategray;
+    width: 100vw;
+ }
+ #author {
+    margin: 8px;
+    color:azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
